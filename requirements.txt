@@ -138,10 +138,6 @@ python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0
-pywin32==303
-platform_system=="Windows"
-pywin32-ctypes==0.2.2
-pywinpty==2.0.12
 PyYAML==6.0.1
 pyzmq==24.0.1
 qrcode==7.4.2
