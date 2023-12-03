@@ -10,17 +10,23 @@ env = 'dev'
 if env == 'dev':
     app.debug = True
     connection_params = {
-        "host": "dpg-cllpv1sjtl8s73epoftg-a.oregon-postgres.render.com",
+        "host": "dpg-clm80phfb9qs739926s0-a.oregon-postgres.render.com",
         "port": "5432",
-        "database": "test_db_t3ex",  # Change to your actual database name
-        "user": "test_db_t3ex_user",
-        "password": "2h86nq06MtBaUw6pgw08z06Y021tSssq",
-        #postgres://test_db_t3ex_user:2h86nq06MtBaUw6pgw08z06Y021tSssq@dpg-cllpv1sjtl8s73epoftg-a.oregon-postgres.render.com/test_db_t3ex
+        "database": "test_db_1bsx",  # Change to your actual database name
+        "user": "test_db_1bsx_user",
+        "password": "f1ytacejZ7RQcSRLqZl7m4aijEKt8V0x",
+        #postgres://test_db_1bsx_user:f1ytacejZ7RQcSRLqZl7m4aijEKt8V0x@dpg-clm80phfb9qs739926s0-a.oregon-postgres.render.com/test_db_1bsx
     }
 else:
     app.debug = False
     connection_params = {
-        # Production database connection parameters
+        "host": "dpg-clm80phfb9qs739926s0-a",
+        "port": "5432",
+        "database": "test_db_1bsx",  # Change to your actual database name
+        "user": "test_db_1bsx_user",
+        "password": "f1ytacejZ7RQcSRLqZl7m4aijEKt8V0x"
+
+        # postgres://test_db_1bsx_user:f1ytacejZ7RQcSRLqZl7m4aijEKt8V0x@dpg-clm80phfb9qs739926s0-a/test_db_1bsx
     }
 
 try:
